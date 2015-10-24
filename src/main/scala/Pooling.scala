@@ -12,7 +12,7 @@ object Pooling extends App {
   val master = system.actorOf(Props(new Master()),
     name = "master")
   system.scheduler.schedule(1 second ,
-    1 hour,
+    1 day,
     master,
     Start)
 
