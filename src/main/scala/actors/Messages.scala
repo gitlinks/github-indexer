@@ -6,5 +6,5 @@ package actors
 sealed trait Messages
 case class Work(i: Int) extends Messages
 case object Start extends Messages
-case class Result(seq: Seq[String]) extends Messages
-case class UploadToElastic(seq: Seq[String]) extends Messages
+case class ResultString(seq: Seq[Option[String]]) extends Messages
+case class UploadToElastic(s: String) extends Messages

@@ -4,7 +4,7 @@
 		module="github-indexer$sbt_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20151022143616"
+		publication="20151023201412"
 	/>
 	<configurations>
 		<conf name="default" visibility="public"/>

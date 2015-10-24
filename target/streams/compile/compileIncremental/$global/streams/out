@@ -2,29 +2,29 @@
 [0m[[0mdebug[0m] [0mInitial source changes: [0m
 [0m[[0mdebug[0m] [0m	removed:Set()[0m
 [0m[[0mdebug[0m] [0m	added: Set()[0m
-[0m[[0mdebug[0m] [0m	modified: Set(/Users/brunnoattorre1/Documents/startup-etc/github-indexer/src/main/scala/actors/Worker.scala)[0m
-[0m[[0mdebug[0m] [0mRemoved products: Set(/Users/brunnoattorre1/Documents/startup-etc/github-indexer/target/scala-2.11/classes/actors/Worker$$anonfun$receive$1.class, /Users/brunnoattorre1/Documents/startup-etc/github-indexer/target/scala-2.11/classes/actors/Worker.class)[0m
+[0m[[0mdebug[0m] [0m	modified: Set(/Users/brunnoattorre1/Documents/startup-etc/github-indexer/src/main/scala/Pooling.scala)[0m
+[0m[[0mdebug[0m] [0mRemoved products: Set(/Users/brunnoattorre1/Documents/startup-etc/github-indexer/target/scala-2.11/classes/Pooling.class, /Users/brunnoattorre1/Documents/startup-etc/github-indexer/target/scala-2.11/classes/Pooling$$anonfun$1.class, /Users/brunnoattorre1/Documents/startup-etc/github-indexer/target/scala-2.11/classes/Pooling$delayedInit$body.class, /Users/brunnoattorre1/Documents/startup-etc/github-indexer/target/scala-2.11/classes/Pooling$.class)[0m
 [0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set()[0m
 [0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
-[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/Users/brunnoattorre1/Documents/startup-etc/github-indexer/src/main/scala/actors/Worker.scala)[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/Users/brunnoattorre1/Documents/startup-etc/github-indexer/src/main/scala/Pooling.scala)[0m
 [0m[[0mdebug[0m] [0m[0m
 [0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
-[0m[[0mdebug[0m] [0m	product: Set(/Users/brunnoattorre1/Documents/startup-etc/github-indexer/src/main/scala/actors/Worker.scala)[0m
+[0m[[0mdebug[0m] [0m	product: Set(/Users/brunnoattorre1/Documents/startup-etc/github-indexer/src/main/scala/Pooling.scala)[0m
 [0m[[0mdebug[0m] [0m	binary dep: Set()[0m
 [0m[[0mdebug[0m] [0m	external source: Set()[0m
-[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/Users/brunnoattorre1/Documents/startup-etc/github-indexer/src/main/scala/actors/Worker.scala)[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/Users/brunnoattorre1/Documents/startup-etc/github-indexer/src/main/scala/Pooling.scala)[0m
 [0m[[0minfo[0m] [0mCompiling 1 Scala source to /Users/brunnoattorre1/Documents/startup-etc/github-indexer/target/scala-2.11/classes...[0m
 [0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.11.0[0m
 [0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.11.0[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 2de7fbc9, interfacing (CompilerInterface) with Scala compiler version 2.11.0[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 39b5754d, interfacing (CompilerInterface) with Scala compiler version 2.11.0[0m
 [0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
 [0m[[0mdebug[0m] [0m	-bootclasspath[0m
 [0m[[0mdebug[0m] [0m	/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/classes:/Users/brunnoattorre1/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.0.jar[0m
 [0m[[0mdebug[0m] [0m	-classpath[0m
-[0m[[0mdebug[0m] [0m	/Users/brunnoattorre1/Documents/startup-etc/github-indexer/target/scala-2.11/classes:/Users/brunnoattorre1/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.0.jar:/Users/brunnoattorre1/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar[0m
-[0m[[33mwarn[0m] [0mthere were 1 feature warning(s); re-run with -feature for details[0m
+[0m[[0mdebug[0m] [0m	/Users/brunnoattorre1/Documents/startup-etc/github-indexer/target/scala-2.11/classes:/Users/brunnoattorre1/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.0.jar:/Users/brunnoattorre1/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/Users/brunnoattorre1/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.4.jar:/Users/brunnoattorre1/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.4.jar:/Users/brunnoattorre1/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/brunnoattorre1/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.4.jar:/Users/brunnoattorre1/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.4.jar:/Users/brunnoattorre1/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar:/Users/brunnoattorre1/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar:/Users/brunnoattorre1/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.2.jar:/Users/brunnoattorre1/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.2.jar:/Users/brunnoattorre1/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.2.jar:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.scala-lang/scala-reflect/2.11.1/jars/scala-reflect.jar:/Users/brunnoattorre1/.ivy2/cache/org.scalaj/scalaj-http_2.11/jars/scalaj-http_2.11-1.1.5.jar[0m
+[0m[[33mwarn[0m] [0mthere were 2 feature warning(s); re-run with -feature for details[0m
 [0m[[33mwarn[0m] [0mone warning found[0m
-[0m[[0mdebug[0m] [0mScala compilation took 2.263710024 s[0m
+[0m[[0mdebug[0m] [0mScala compilation took 3.611793478 s[0m
 [0m[[0mdebug[0m] [0mNew invalidations:[0m
 [0m[[0mdebug[0m] [0m	Set()[0m
 [0m[[0mdebug[0m] [0mInitial set of included nodes: Set()[0m

@@ -11,7 +11,7 @@ import akka.actor.{ActorRef, Props, Actor}
  * Created by brunnoattorre1 on 10/22/15.
  */
 class Master extends Actor{
-
+    val elasticRouter: ActorRef = context.actorOf(RoundRobinPool(10).props(Props[ElasticsearchUploader]), "elasticRouter")
 
    def receive: Receive ={
      case Start =>
@@ -20,5 +20,10 @@ class Master extends Actor{
        for( i <- 0 to 23){
          router ! Work(i)
        }
+     case ResultString (list) => list.foreach{
+       case Some(s) =>
+         elasticRouter ! UploadToElastic(s)
+       case _ =>
+     }
    }
 }
