@@ -1,20 +1,18 @@
 import actors.{Start, Master}
-import akka.actor.{Props, ActorSystem}
-import akka.actor.Actor
-import akka.actor.Props
+import akka.actor._
+import akka.event.Logging
+import com.typesafe.config.ConfigFactory
 import scala.concurrent.duration._
 import scala.concurrent.ExecutionContext.Implicits.global
 /**
  * Created by brunnoattorre1 on 10/22/15.
  */
-object Pooling extends App{
-
+object Pooling extends App {
   val system = ActorSystem("Pooling")
   val master = system.actorOf(Props(new Master()),
     name = "master")
-
-  system.scheduler.schedule(1 minute ,
-    1 day,
+  system.scheduler.schedule(1 second ,
+    1 hour,
     master,
     Start)
 

@@ -11,19 +11,20 @@ import java.net.URL
 import java.text.SimpleDateFormat
 import java.util.{Calendar, Date}
 
-import akka.actor.Actor
+import akka.actor.{ActorLogging, Actor}
 
 /**
  * Created by brunnoattorre1 on 10/22/15.
  */
-class Worker extends Actor {
+class Worker extends Actor with ActorLogging{
 
   def downloadAndParse(i: Int): Seq[Option[String]] = {
     val calendar = Calendar.getInstance()
     calendar.add(Calendar.DATE, -1)
     val currentDate = new SimpleDateFormat("yyyy-MM-dd").format(calendar.getTime)
-    val file = new File("/tmp/output"+i+".gzip")
+    log.info("Starting download of "+"http://data.githubarchive.org/"+currentDate+ "-"+i+".json.gz")
     val gis = new GZIPInputStream(new BufferedInputStream(new URL("http://data.githubarchive.org/"+currentDate+ "-"+i+".json.gz").openStream()))
+    log.info("Download finished")
     Source.fromInputStream(gis).getLines().map(parseSingleLine).toSeq
   }
 
