@@ -19,7 +19,7 @@ class ElasticsearchUploader extends Actor with ActorLogging {
         s.foreach {
           case Some(repo) =>
             val owner = repo.split("/")(0)
-            val name = repo.split("/")(0)
+            val name = repo.split("/")(1)
             var url = elasticEndpoint + repo.replace("/", "-")
             val httpRequest = Http(url).method("PUT").postData("{repo: {\"name\": \"" + repo + "\"}}")
             log.debug("Response " + httpRequest.asString)
