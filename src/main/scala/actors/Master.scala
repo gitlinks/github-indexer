@@ -50,7 +50,7 @@ class Master extends Actor with ActorLogging {
       val currentDate = new SimpleDateFormat("yyyy-MM-dd").format(calendar.getTime)
 
       for (i <- 0 to 23) {
-        // router ! Work(i, currentDate)
+         router ! Work(i, currentDate)
       }
       val cal = Calendar.getInstance()
       cal.add(Calendar.DAY_OF_MONTH, -2)
