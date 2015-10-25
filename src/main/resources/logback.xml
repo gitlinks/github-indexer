@@ -1,17 +1,19 @@
 <configuration>
 
-    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>log/app.log</file>
         <append>true</append>
         <encoder>
             <pattern>%date{yyyy-MM-dd hh:mm:ss} %X{akkaTimestamp} %-5level[%thread] %logger{1} - %msg%n</pattern>
         </encoder>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-            <maxIndex>10</maxIndex>
-            <FileNamePattern>log/app.log.%i.gz</FileNamePattern>
+            <fileNamePattern>app.%i.log.zip</fileNamePattern>
+            <minIndex>1</minIndex>
+            <maxIndex>2</maxIndex>
         </rollingPolicy>
+
         <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
-            <maxFileSize>20MB</maxFileSize>
+            <maxFileSize>50MB</maxFileSize>
         </triggeringPolicy>
     </appender>
 

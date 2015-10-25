@@ -32,4 +32,4 @@
 [0m[[0mdebug[0m] [0m	/Users/brunnoattorre1/.ivy2/cache/org.apache.derby/derby/jars/derby-10.1.1.0.jar[0m
 [0m[[0mdebug[0m] [0mWaiting for thread run-main-0 to terminate.[0m
 [0m[[0mdebug[0m] [0m	Thread run-main-0 exited.[0m
-[0m[[0mdebug[0m] [0mWaiting for thread Pooling-scheduler-1 to terminate.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread Pooling-akka.actor.default-dispatcher-5 to terminate.[0m
