@@ -3,6 +3,7 @@ package actors
 import java.text.SimpleDateFormat
 import java.util.{Calendar, Date}
 
+import DAO.DerbyDAO
 import akka.routing._
 
 import scala.io.Source
@@ -22,25 +23,23 @@ class Master extends Actor with ActorLogging{
   def receive: Receive = {
     case Start =>
       log.info("Start")
-      val cal = Calendar.getInstance()
-      cal.add(Calendar.DAY_OF_MONTH, -2)
-      Source.fromFile(lastRunFile).getLines().foreach{
-        s => if(sdf.parse(s).before(cal.getTime)) warnAdmin(sdf.parse(s))
-      }
+      context.actorOf(Props[DerbyDAO]) ! GetLastUpdatedDate
       val router: ActorRef =
         context.actorOf(RoundRobinPool(23).props(Props[Worker]), "workerRouter")
       for (i <- 0 to 23) {
         router ! Work(i)
       }
+      val cal = Calendar.getInstance()
+      cal.add(Calendar.DAY_OF_MONTH, -2)
+      context.actorOf(Props[DerbyDAO]) ! InsertLastUpdatedDate(sdf.format(cal.getTime))
     case ResultString(list) =>
       log.info("Starting to send repos to elasticsearch")
-      val writer = new PrintWriter(lastRunFile)
-      writer.write(sdf.format(new Date()))
-      writer.close()
+
       list.foreach {
         case Some(s) =>
           elasticRouter ! UploadToElastic(s)
         case _ =>
       }
+    case ReceiveLastUpdateDate(s) => log.info(s)
   }
 }

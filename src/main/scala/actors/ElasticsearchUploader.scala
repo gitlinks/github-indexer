@@ -17,8 +17,8 @@ class ElasticsearchUploader extends Actor with ActorLogging{
        val owner = s.split("/")(0)
        val name = s.split("/")(0)
        var url = elasticEndpoint +s.replace("/","-")
-       val httpRequest = Http(url).method("PUT").postData("{repo: {\"name\": \""+s+ "\"}}")
-       log.debug("Response "+ httpRequest.asString)
+      // val httpRequest = Http(url).method("PUT").postData("{repo: {\"name\": \""+s+ "\"}}")
+       //log.debug("Response "+ httpRequest.asString)
 
      }
   }

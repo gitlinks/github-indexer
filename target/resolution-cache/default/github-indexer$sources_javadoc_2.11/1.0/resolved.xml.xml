@@ -4,7 +4,7 @@
 		module="github-indexer$sources_javadoc_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20151024113009"
+		publication="20151024203054"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
@@ -159,6 +159,10 @@
 		<dependency org="org.slf4j" name="slf4j-api" rev="1.7.7" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="slf4j-api" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="slf4j-api" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.derby" name="derby" rev="10.1.1.0" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="derby" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="derby" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.0" transitive="false" conf="scala-tool->default(compile)">
 			<artifact name="scala-compiler" type="src" ext="jar" conf="sources" e:classifier="sources"/>

@@ -7,6 +7,7 @@ libraryDependencies +=  "org.scalaj" %% "scalaj-http" % "1.1.5"
 libraryDependencies += "com.github.dzsessona" % "scamandrill_2.11" % "1.1.0"
 libraryDependencies += "com.typesafe.akka" % "akka-slf4j_2.11" % "2.3.14"
 libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.1.3"
+libraryDependencies += "org.apache.derby" % "derby" % "10.1.1.0"
 
 resolvers ++= Seq(
   "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases",

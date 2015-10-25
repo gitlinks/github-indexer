@@ -9,7 +9,7 @@
 [debug] == resolving dependencies for default#github-indexer$sources_javadoc_2.11;1.0 [compile]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->default(compile)]
 [info] Resolving com.typesafe.akka#akka-actor_2.11;2.4.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5977350c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@52f8fefb
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-actor_2.11;2.4.0
 [debug] 	found com.typesafe.akka#akka-actor_2.11;2.4.0 in sbt-chain
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->runtime]
@@ -17,7 +17,7 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.11.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5bff8333
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6b5a2228
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.7
 [debug] 	found org.scala-lang#scala-library;2.11.7 in sbt-chain
 [debug] 	[2.11.7] org.scala-lang#scala-library;2.11.7
@@ -26,7 +26,7 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe#config;1.3.0 [compile->default(compile)]
 [info] Resolving com.typesafe#config;1.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@17be1833
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4b08bb58
 [debug] sbt-chain: module revision found in cache: com.typesafe#config;1.3.0
 [debug] 	found com.typesafe#config;1.3.0 in sbt-chain
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe#config;1.3.0 [compile->runtime]
@@ -34,7 +34,7 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe#config;1.3.0 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.play#play-json_2.11;2.3.4 [compile->default(compile)]
 [info] Resolving com.typesafe.play#play-json_2.11;2.3.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@13970938
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7c2c9e4b
 [debug] sbt-chain: module revision found in cache: com.typesafe.play#play-json_2.11;2.3.4
 [debug] 	found com.typesafe.play#play-json_2.11;2.3.4 in sbt-chain
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.play#play-json_2.11;2.3.4 [compile->runtime]
@@ -42,7 +42,7 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.play#play-json_2.11;2.3.4 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.play#play-iteratees_2.11;2.3.4 [compile->default(compile)]
 [info] Resolving com.typesafe.play#play-iteratees_2.11;2.3.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7209f1fc
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@37f85a58
 [debug] sbt-chain: module revision found in cache: com.typesafe.play#play-iteratees_2.11;2.3.4
 [debug] 	found com.typesafe.play#play-iteratees_2.11;2.3.4 in sbt-chain
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.play#play-iteratees_2.11;2.3.4 [compile->runtime]
@@ -50,7 +50,7 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.play#play-iteratees_2.11;2.3.4 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.scala-stm#scala-stm_2.11;0.7 [compile->default(compile)]
 [info] Resolving org.scala-stm#scala-stm_2.11;0.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@25fc2758
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1e8544b8
 [debug] sbt-chain: module revision found in cache: org.scala-stm#scala-stm_2.11;0.7
 [debug] 	found org.scala-stm#scala-stm_2.11;0.7 in sbt-chain
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.scala-stm#scala-stm_2.11;0.7 [compile->runtime]
@@ -58,7 +58,7 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.scala-stm#scala-stm_2.11;0.7 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.play#play-functional_2.11;2.3.4 [compile->default(compile)]
 [info] Resolving com.typesafe.play#play-functional_2.11;2.3.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@729bc730
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@247465f4
 [debug] sbt-chain: module revision found in cache: com.typesafe.play#play-functional_2.11;2.3.4
 [debug] 	found com.typesafe.play#play-functional_2.11;2.3.4 in sbt-chain
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.play#play-functional_2.11;2.3.4 [compile->runtime]
@@ -66,7 +66,7 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.play#play-functional_2.11;2.3.4 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.play#play-datacommons_2.11;2.3.4 [compile->default(compile)]
 [info] Resolving com.typesafe.play#play-datacommons_2.11;2.3.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1cfed05f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3b8fdd1f
 [debug] sbt-chain: module revision found in cache: com.typesafe.play#play-datacommons_2.11;2.3.4
 [debug] 	found com.typesafe.play#play-datacommons_2.11;2.3.4 in sbt-chain
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.play#play-datacommons_2.11;2.3.4 [compile->runtime]
@@ -74,7 +74,7 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.play#play-datacommons_2.11;2.3.4 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->joda-time#joda-time;2.3 [compile->default(compile)]
 [info] Resolving joda-time#joda-time;2.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@101b755e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3acfd185
 [debug] sbt-chain: module revision found in cache: joda-time#joda-time;2.3
 [debug] 	found joda-time#joda-time;2.3 in sbt-chain
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->joda-time#joda-time;2.3 [compile->runtime]
@@ -82,7 +82,7 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->joda-time#joda-time;2.3 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.6 [compile->default(compile)]
 [info] Resolving org.joda#joda-convert;1.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@64904a34
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3685d807
 [debug] sbt-chain: module revision found in cache: org.joda#joda-convert;1.6
 [debug] 	found org.joda#joda-convert;1.6 in sbt-chain
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.6 [compile->runtime]
@@ -90,7 +90,7 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.6 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.fasterxml.jackson.core#jackson-annotations;2.3.2 [compile->default(compile)]
 [info] Resolving com.fasterxml.jackson.core#jackson-annotations;2.3.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@10e58388
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@56f16c09
 [debug] sbt-chain: module revision found in cache: com.fasterxml.jackson.core#jackson-annotations;2.3.2
 [debug] 	found com.fasterxml.jackson.core#jackson-annotations;2.3.2 in sbt-chain
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.fasterxml.jackson.core#jackson-annotations;2.3.2 [compile->runtime]
@@ -98,7 +98,7 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.fasterxml.jackson.core#jackson-annotations;2.3.2 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.fasterxml.jackson.core#jackson-core;2.3.2 [compile->default(compile)]
 [info] Resolving com.fasterxml.jackson.core#jackson-core;2.3.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@404f10f1
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6d18ee0a
 [debug] sbt-chain: module revision found in cache: com.fasterxml.jackson.core#jackson-core;2.3.2
 [debug] 	found com.fasterxml.jackson.core#jackson-core;2.3.2 in sbt-chain
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.fasterxml.jackson.core#jackson-core;2.3.2 [compile->runtime]
@@ -106,7 +106,7 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.fasterxml.jackson.core#jackson-core;2.3.2 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.fasterxml.jackson.core#jackson-databind;2.3.2 [compile->default(compile)]
 [info] Resolving com.fasterxml.jackson.core#jackson-databind;2.3.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@390dd747
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2e6b02d8
 [debug] sbt-chain: module revision found in cache: com.fasterxml.jackson.core#jackson-databind;2.3.2
 [debug] 	found com.fasterxml.jackson.core#jackson-databind;2.3.2 in sbt-chain
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.fasterxml.jackson.core#jackson-databind;2.3.2 [compile->runtime]
@@ -114,7 +114,7 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.fasterxml.jackson.core#jackson-databind;2.3.2 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.scala-lang#scala-reflect;2.11.1 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-reflect;2.11.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@76570f5
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1066e909
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.11.1
 [debug] 	found org.scala-lang#scala-reflect;2.11.1 in sbt-chain
 [debug] 	[2.11.1] org.scala-lang#scala-reflect;2.11.1
@@ -123,7 +123,7 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.scala-lang#scala-reflect;2.11.1 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.scalaj#scalaj-http_2.11;1.1.5 [compile->default(compile)]
 [info] Resolving org.scalaj#scalaj-http_2.11;1.1.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@76154d36
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3e570e28
 [debug] sbt-chain: module revision found in cache: org.scalaj#scalaj-http_2.11;1.1.5
 [debug] 	found org.scalaj#scalaj-http_2.11;1.1.5 in sbt-chain
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.scalaj#scalaj-http_2.11;1.1.5 [compile->runtime]
@@ -131,7 +131,7 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.scalaj#scalaj-http_2.11;1.1.5 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.github.dzsessona#scamandrill_2.11;1.1.0 [compile->default(compile)]
 [info] Resolving com.github.dzsessona#scamandrill_2.11;1.1.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@67646aad
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@35d51a92
 [debug] sbt-chain: module revision found in cache: com.github.dzsessona#scamandrill_2.11;1.1.0
 [debug] 	found com.github.dzsessona#scamandrill_2.11;1.1.0 in sbt-chain
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.github.dzsessona#scamandrill_2.11;1.1.0 [compile->runtime]
@@ -139,7 +139,7 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.github.dzsessona#scamandrill_2.11;1.1.0 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->io.spray#spray-can_2.11;1.3.1 [compile->default(compile)]
 [info] Resolving io.spray#spray-can_2.11;1.3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7d07078d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@152cf91
 [debug] sbt-chain: module revision found in cache: io.spray#spray-can_2.11;1.3.1
 [debug] 	found io.spray#spray-can_2.11;1.3.1 in sbt-chain
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->io.spray#spray-can_2.11;1.3.1 [compile->runtime]
@@ -147,7 +147,7 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->io.spray#spray-can_2.11;1.3.1 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->io.spray#spray-io_2.11;1.3.1 [compile->default(compile)]
 [info] Resolving io.spray#spray-io_2.11;1.3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1003caa7
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7fb2bdfc
 [debug] sbt-chain: module revision found in cache: io.spray#spray-io_2.11;1.3.1
 [debug] 	found io.spray#spray-io_2.11;1.3.1 in sbt-chain
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->io.spray#spray-io_2.11;1.3.1 [compile->runtime]
@@ -155,7 +155,7 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->io.spray#spray-io_2.11;1.3.1 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->io.spray#spray-util_2.11;1.3.1 [compile->default(compile)]
 [info] Resolving io.spray#spray-util_2.11;1.3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@e83e0fc
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4de55575
 [debug] sbt-chain: module revision found in cache: io.spray#spray-util_2.11;1.3.1
 [debug] 	found io.spray#spray-util_2.11;1.3.1 in sbt-chain
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->io.spray#spray-util_2.11;1.3.1 [compile->runtime]
@@ -163,7 +163,7 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->io.spray#spray-util_2.11;1.3.1 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->io.spray#spray-http_2.11;1.3.1 [compile->default(compile)]
 [info] Resolving io.spray#spray-http_2.11;1.3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@734ff88e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@46000535
 [debug] sbt-chain: module revision found in cache: io.spray#spray-http_2.11;1.3.1
 [debug] 	found io.spray#spray-http_2.11;1.3.1 in sbt-chain
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->io.spray#spray-http_2.11;1.3.1 [compile->runtime]
@@ -171,7 +171,7 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->io.spray#spray-http_2.11;1.3.1 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.parboiled#parboiled-scala_2.11;1.1.6 [compile->default(compile)]
 [info] Resolving org.parboiled#parboiled-scala_2.11;1.1.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@291db36c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@36e69765
 [debug] sbt-chain: module revision found in cache: org.parboiled#parboiled-scala_2.11;1.1.6
 [debug] 	found org.parboiled#parboiled-scala_2.11;1.1.6 in sbt-chain
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.parboiled#parboiled-scala_2.11;1.1.6 [compile->runtime]
@@ -179,7 +179,7 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.parboiled#parboiled-scala_2.11;1.1.6 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.parboiled#parboiled-core;1.1.6 [compile->default(compile)]
 [info] Resolving org.parboiled#parboiled-core;1.1.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@626a234
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@54023291
 [debug] sbt-chain: module revision found in cache: org.parboiled#parboiled-core;1.1.6
 [debug] 	found org.parboiled#parboiled-core;1.1.6 in sbt-chain
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.parboiled#parboiled-core;1.1.6 [compile->runtime]
@@ -187,7 +187,7 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.parboiled#parboiled-core;1.1.6 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->io.spray#spray-routing_2.11;1.3.1 [compile->default(compile)]
 [info] Resolving io.spray#spray-routing_2.11;1.3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@70dab68c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5663dcbe
 [debug] sbt-chain: module revision found in cache: io.spray#spray-routing_2.11;1.3.1
 [debug] 	found io.spray#spray-routing_2.11;1.3.1 in sbt-chain
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->io.spray#spray-routing_2.11;1.3.1 [compile->runtime]
@@ -195,7 +195,7 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->io.spray#spray-routing_2.11;1.3.1 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->io.spray#spray-httpx_2.11;1.3.1 [compile->default(compile)]
 [info] Resolving io.spray#spray-httpx_2.11;1.3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@23f7fef5
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2cf34d08
 [debug] sbt-chain: module revision found in cache: io.spray#spray-httpx_2.11;1.3.1
 [debug] 	found io.spray#spray-httpx_2.11;1.3.1 in sbt-chain
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->io.spray#spray-httpx_2.11;1.3.1 [compile->runtime]
@@ -203,7 +203,7 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->io.spray#spray-httpx_2.11;1.3.1 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->default(compile)]
 [info] Resolving org.scala-lang.modules#scala-xml_2.11;1.0.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@27c01d6a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@12da2c7c
 [debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.11;1.0.1
 [debug] 	found org.scala-lang.modules#scala-xml_2.11;1.0.1 in sbt-chain
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->runtime]
@@ -211,7 +211,7 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.jvnet.mimepull#mimepull;1.9.4 [compile->default(compile)]
 [info] Resolving org.jvnet.mimepull#mimepull;1.9.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1164ca61
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@d5f76d4
 [debug] sbt-chain: module revision found in cache: org.jvnet.mimepull#mimepull;1.9.4
 [debug] 	found org.jvnet.mimepull#mimepull;1.9.4 in sbt-chain
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.jvnet.mimepull#mimepull;1.9.4 [compile->runtime]
@@ -219,7 +219,7 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.jvnet.mimepull#mimepull;1.9.4 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.chuusai#shapeless_2.11;1.2.4 [compile->default(compile)]
 [info] Resolving com.chuusai#shapeless_2.11;1.2.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@16ad0f8f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@47e4879b
 [debug] sbt-chain: module revision found in cache: com.chuusai#shapeless_2.11;1.2.4
 [debug] 	found com.chuusai#shapeless_2.11;1.2.4 in sbt-chain
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.chuusai#shapeless_2.11;1.2.4 [compile->runtime]
@@ -227,7 +227,7 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.chuusai#shapeless_2.11;1.2.4 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->io.spray#spray-json_2.11;1.2.6 [compile->default(compile)]
 [info] Resolving io.spray#spray-json_2.11;1.2.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@e318813
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@33e40249
 [debug] sbt-chain: module revision found in cache: io.spray#spray-json_2.11;1.2.6
 [debug] 	found io.spray#spray-json_2.11;1.2.6 in sbt-chain
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->io.spray#spray-json_2.11;1.2.6 [compile->runtime]
@@ -235,7 +235,7 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->io.spray#spray-json_2.11;1.2.6 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->io.spray#spray-testkit_2.11;1.3.1 [compile->default(compile)]
 [info] Resolving io.spray#spray-testkit_2.11;1.3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7587f350
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@626dd826
 [debug] sbt-chain: module revision found in cache: io.spray#spray-testkit_2.11;1.3.1
 [debug] 	found io.spray#spray-testkit_2.11;1.3.1 in sbt-chain
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->io.spray#spray-testkit_2.11;1.3.1 [compile->runtime]
@@ -243,7 +243,7 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->io.spray#spray-testkit_2.11;1.3.1 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->io.spray#spray-client_2.11;1.3.1 [compile->default(compile)]
 [info] Resolving io.spray#spray-client_2.11;1.3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@286323f5
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5ee01af4
 [debug] sbt-chain: module revision found in cache: io.spray#spray-client_2.11;1.3.1
 [debug] 	found io.spray#spray-client_2.11;1.3.1 in sbt-chain
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->io.spray#spray-client_2.11;1.3.1 [compile->runtime]
@@ -251,7 +251,7 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->io.spray#spray-client_2.11;1.3.1 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.3.4 [compile->default(compile)]
 [info] Resolving com.typesafe.akka#akka-testkit_2.11;2.3.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@54170b28
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2df0abc
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-testkit_2.11;2.3.4
 [debug] 	found com.typesafe.akka#akka-testkit_2.11;2.3.4 in sbt-chain
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.3.4 [compile->runtime]
@@ -259,7 +259,7 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.3.4 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.akka#akka-slf4j_2.11;2.3.14 [compile->default(compile)]
 [info] Resolving com.typesafe.akka#akka-slf4j_2.11;2.3.14 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@32599c23
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3c24dbc0
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-slf4j_2.11;2.3.14
 [debug] 	found com.typesafe.akka#akka-slf4j_2.11;2.3.14 in sbt-chain
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.akka#akka-slf4j_2.11;2.3.14 [compile->runtime]
@@ -267,7 +267,7 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.akka#akka-slf4j_2.11;2.3.14 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->ch.qos.logback#logback-classic;1.1.3 [compile->default(compile)]
 [info] Resolving ch.qos.logback#logback-classic;1.1.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2d637598
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@354f5a7b
 [debug] sbt-chain: module revision found in cache: ch.qos.logback#logback-classic;1.1.3
 [debug] 	found ch.qos.logback#logback-classic;1.1.3 in sbt-chain
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->ch.qos.logback#logback-classic;1.1.3 [compile->runtime]
@@ -275,7 +275,7 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->ch.qos.logback#logback-classic;1.1.3 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->ch.qos.logback#logback-core;1.1.3 [compile->default(compile)]
 [info] Resolving ch.qos.logback#logback-core;1.1.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7ee46c05
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@9bb7632
 [debug] sbt-chain: module revision found in cache: ch.qos.logback#logback-core;1.1.3
 [debug] 	found ch.qos.logback#logback-core;1.1.3 in sbt-chain
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->ch.qos.logback#logback-core;1.1.3 [compile->runtime]
@@ -283,12 +283,20 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->ch.qos.logback#logback-core;1.1.3 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [compile->default(compile)]
 [info] Resolving org.slf4j#slf4j-api;1.7.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1f1716e7
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5c38cfab
 [debug] sbt-chain: module revision found in cache: org.slf4j#slf4j-api;1.7.7
 [debug] 	found org.slf4j#slf4j-api;1.7.7 in sbt-chain
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [compile->runtime]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [compile->compile]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [compile->master]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [compile->default(compile)]
+[info] Resolving org.apache.derby#derby;10.1.1.0 ...
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@598871a0
+[debug] sbt-chain: module revision found in cache: org.apache.derby#derby;10.1.1.0
+[debug] 	found org.apache.derby#derby;10.1.1.0 in sbt-chain
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [compile->runtime]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [compile->compile]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [compile->master]
 [debug] resolving dependencies for configuration 'runtime'
 [debug] == resolving dependencies for default#github-indexer$sources_javadoc_2.11;1.0 [runtime]
 [debug] == resolving dependencies for default#github-indexer$sources_javadoc_2.11;1.0 [compile]
@@ -432,6 +440,10 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [compile->runtime]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [compile->compile]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [compile->master]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [compile->default(compile)]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [compile->runtime]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [compile->compile]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [runtime->default(compile)]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [runtime->runtime]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [runtime->compile]
@@ -572,6 +584,10 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [runtime->runtime]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [runtime->compile]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [runtime->master]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [runtime->default(compile)]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [runtime->runtime]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [runtime->compile]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [runtime->master]
 [debug] resolving dependencies for configuration 'test'
 [debug] == resolving dependencies for default#github-indexer$sources_javadoc_2.11;1.0 [test]
 [debug] == resolving dependencies for default#github-indexer$sources_javadoc_2.11;1.0 [runtime]
@@ -716,6 +732,10 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [compile->runtime]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [compile->compile]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [compile->master]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [compile->default(compile)]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [compile->runtime]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [compile->compile]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [runtime->default(compile)]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [runtime->runtime]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [runtime->compile]
@@ -856,6 +876,10 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [runtime->runtime]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [runtime->compile]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [runtime->master]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [runtime->default(compile)]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [runtime->runtime]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [runtime->compile]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [runtime->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [test->default(compile)]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [test->runtime]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [test->compile]
@@ -996,6 +1020,10 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [test->runtime]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [test->compile]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [test->master]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [test->default(compile)]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [test->runtime]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [test->compile]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [test->master]
 [debug] resolving dependencies for configuration 'provided'
 [debug] == resolving dependencies for default#github-indexer$sources_javadoc_2.11;1.0 [provided]
 [debug] resolving dependencies for configuration 'optional'
@@ -1143,6 +1171,10 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [compile->runtime]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [compile->compile]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [compile->master]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [compile->default(compile)]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [compile->runtime]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [compile->compile]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [compile->master]
 [debug] == resolving dependencies for default#github-indexer$sources_javadoc_2.11;1.0 [optional]
 [debug] == resolving dependencies for default#github-indexer$sources_javadoc_2.11;1.0 [provided]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile-internal->default(compile)]
@@ -1285,6 +1317,10 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [compile-internal->runtime]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [compile-internal->compile]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [compile-internal->master]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [compile-internal->default(compile)]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [compile-internal->runtime]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [compile-internal->compile]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [compile-internal->master]
 [debug] resolving dependencies for configuration 'runtime-internal'
 [debug] == resolving dependencies for default#github-indexer$sources_javadoc_2.11;1.0 [runtime-internal]
 [debug] == resolving dependencies for default#github-indexer$sources_javadoc_2.11;1.0 [runtime]
@@ -1429,6 +1465,10 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [compile->runtime]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [compile->compile]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [compile->master]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [compile->default(compile)]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [compile->runtime]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [compile->compile]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [runtime->default(compile)]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [runtime->runtime]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [runtime->compile]
@@ -1569,6 +1609,10 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [runtime->runtime]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [runtime->compile]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [runtime->master]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [runtime->default(compile)]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [runtime->runtime]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [runtime->compile]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [runtime->master]
 [debug] == resolving dependencies for default#github-indexer$sources_javadoc_2.11;1.0 [optional]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [runtime-internal->default(compile)]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [runtime-internal->runtime]
@@ -1710,6 +1754,10 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [runtime-internal->runtime]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [runtime-internal->compile]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [runtime-internal->master]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [runtime-internal->default(compile)]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [runtime-internal->runtime]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [runtime-internal->compile]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [runtime-internal->master]
 [debug] resolving dependencies for configuration 'test-internal'
 [debug] == resolving dependencies for default#github-indexer$sources_javadoc_2.11;1.0 [test-internal]
 [debug] == resolving dependencies for default#github-indexer$sources_javadoc_2.11;1.0 [test]
@@ -1855,6 +1903,10 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [compile->runtime]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [compile->compile]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [compile->master]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [compile->default(compile)]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [compile->runtime]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [compile->compile]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [compile->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [runtime->default(compile)]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [runtime->runtime]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [runtime->compile]
@@ -1995,6 +2047,10 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [runtime->runtime]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [runtime->compile]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [runtime->master]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [runtime->default(compile)]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [runtime->runtime]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [runtime->compile]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [runtime->master]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [test->default(compile)]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [test->runtime]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [test->compile]
@@ -2135,6 +2191,10 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [test->runtime]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [test->compile]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [test->master]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [test->default(compile)]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [test->runtime]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [test->compile]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [test->master]
 [debug] == resolving dependencies for default#github-indexer$sources_javadoc_2.11;1.0 [optional]
 [debug] == resolving dependencies for default#github-indexer$sources_javadoc_2.11;1.0 [provided]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [test-internal->default(compile)]
@@ -2277,6 +2337,10 @@
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [test-internal->runtime]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [test-internal->compile]
 [debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.slf4j#slf4j-api;1.7.7 [test-internal->master]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [test-internal->default(compile)]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [test-internal->runtime]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [test-internal->compile]
+[debug] == resolving dependencies default#github-indexer$sources_javadoc_2.11;1.0->org.apache.derby#derby;10.1.1.0 [test-internal->master]
 [debug] resolving dependencies for configuration 'plugin'
 [debug] == resolving dependencies for default#github-indexer$sources_javadoc_2.11;1.0 [plugin]
 [debug] resolving dependencies for configuration 'sources'
@@ -2349,8 +2413,8 @@
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-json_2.11;2.3.4!play-json_2.11.jar
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-iteratees_2.11;2.3.4!play-iteratees_2.11.jar
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-iteratees_2.11;2.3.4!play-iteratees_2.11.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-stm#scala-stm_2.11;0.7!scala-stm_2.11.jar
 [debug] 	[NOT REQUIRED] org.scala-stm#scala-stm_2.11;0.7!scala-stm_2.11.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-stm#scala-stm_2.11;0.7!scala-stm_2.11.jar
 [debug] 	[NOT REQUIRED] org.scala-stm#scala-stm_2.11;0.7!scala-stm_2.11.jar(doc)
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-functional_2.11;2.3.4!play-functional_2.11.jar
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-functional_2.11;2.3.4!play-functional_2.11.jar(src)
@@ -2437,6 +2501,75 @@
 [debug] 	[NOT REQUIRED] org.slf4j#slf4j-api;1.7.7!slf4j-api.jar(doc)
 [debug] 	[NOT REQUIRED] org.slf4j#slf4j-api;1.7.7!slf4j-api.jar(src)
 [debug] 	[NOT REQUIRED] org.slf4j#slf4j-api;1.7.7!slf4j-api.jar
+[debug] 	[NOT REQUIRED] org.apache.derby#derby;10.1.1.0!derby.jar
+[debug] 		tried /Users/brunnoattorre1/.ivy2/local/org.apache.derby/derby/10.1.1.0/docs/derby-javadoc.jar
+[debug] 		tried /Users/brunnoattorre1/.ivy2/local/org.apache.derby/derby/10.1.1.0/srcs/derby-sources.jar
+[debug] 		tried /Users/brunnoattorre1/.activator/repository/org.apache.derby/derby/10.1.1.0/docs/derby-javadoc.jar
+[debug] 		tried /Users/brunnoattorre1/.activator/repository/org.apache.derby/derby/10.1.1.0/srcs/derby-sources.jar
+[debug] 		tried /usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.apache.derby/derby/10.1.1.0/docs/derby-javadoc.jar
+[debug] 		tried /usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.apache.derby/derby/10.1.1.0/srcs/derby-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/apache/derby/derby/10.1.1.0/derby-10.1.1.0-javadoc.jar
+[debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/apache/derby/derby/10.1.1.0/derby-10.1.1.0-javadoc.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/apache/derby/derby/10.1.1.0/derby-10.1.1.0-sources.jar
+[debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/apache/derby/derby/10.1.1.0/derby-10.1.1.0-sources.jar
+[debug] 		tried http://repo.typesafe.com/typesafe/releases/org/apache/derby/derby/10.1.1.0/derby-10.1.1.0-javadoc.jar
+[debug] CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/apache/derby/derby/10.1.1.0/derby-10.1.1.0-javadoc.jar
+[debug] 		tried http://repo.typesafe.com/typesafe/releases/org/apache/derby/derby/10.1.1.0/derby-10.1.1.0-sources.jar
+[debug] CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/apache/derby/derby/10.1.1.0/derby-10.1.1.0-sources.jar
+[debug] 		tried http://repo.typesafe.com/typesafe/ivy-releases/org.apache.derby/derby/10.1.1.0/docs/derby-javadoc.jar
+[debug] CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/org.apache.derby/derby/10.1.1.0/docs/derby-javadoc.jar
+[debug] 		tried http://repo.typesafe.com/typesafe/ivy-releases/org.apache.derby/derby/10.1.1.0/srcs/derby-sources.jar
+[debug] CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/org.apache.derby/derby/10.1.1.0/srcs/derby-sources.jar
+[debug] 		tried http://dl.bintray.com/scalaz/releases/org/apache/derby/derby/10.1.1.0/derby-10.1.1.0-javadoc.jar
+[debug] CLIENT ERROR: Not Found url=http://dl.bintray.com/scalaz/releases/org/apache/derby/derby/10.1.1.0/derby-10.1.1.0-javadoc.jar
+[debug] 		tried http://dl.bintray.com/scalaz/releases/org/apache/derby/derby/10.1.1.0/derby-10.1.1.0-sources.jar
+[debug] CLIENT ERROR: Not Found url=http://dl.bintray.com/scalaz/releases/org/apache/derby/derby/10.1.1.0/derby-10.1.1.0-sources.jar
+[debug] 		tried http://repo.typesafe.com/typesafe/releases/org/apache/derby/derby/10.1.1.0/derby-10.1.1.0-javadoc.jar
+[debug] CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/apache/derby/derby/10.1.1.0/derby-10.1.1.0-javadoc.jar
+[debug] 		tried http://repo.typesafe.com/typesafe/releases/org/apache/derby/derby/10.1.1.0/derby-10.1.1.0-sources.jar
+[debug] CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/apache/derby/derby/10.1.1.0/derby-10.1.1.0-sources.jar
+[debug] 		tried https://maven.atlassian.com/public/org/apache/derby/derby/10.1.1.0/derby-10.1.1.0-javadoc.jar
+[debug] CLIENT ERROR: Not Found url=https://maven.atlassian.com/public/org/apache/derby/derby/10.1.1.0/derby-10.1.1.0-javadoc.jar
+[debug] 		tried https://maven.atlassian.com/public/org/apache/derby/derby/10.1.1.0/derby-10.1.1.0-sources.jar
+[debug] CLIENT ERROR: Not Found url=https://maven.atlassian.com/public/org/apache/derby/derby/10.1.1.0/derby-10.1.1.0-sources.jar
+[warn] 	[FAILED     ] org.apache.derby#derby;10.1.1.0!derby.jar(doc):  (0ms)
+[warn] ==== local: tried
+[warn]   /Users/brunnoattorre1/.ivy2/local/org.apache.derby/derby/10.1.1.0/docs/derby-javadoc.jar
+[warn] ==== activator-launcher-local: tried
+[warn]   /Users/brunnoattorre1/.activator/repository/org.apache.derby/derby/10.1.1.0/docs/derby-javadoc.jar
+[warn] ==== activator-local: tried
+[warn]   /usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.apache.derby/derby/10.1.1.0/docs/derby-javadoc.jar
+[warn] ==== public: tried
+[warn]   https://repo1.maven.org/maven2/org/apache/derby/derby/10.1.1.0/derby-10.1.1.0-javadoc.jar
+[warn] ==== typesafe-releases: tried
+[warn]   http://repo.typesafe.com/typesafe/releases/org/apache/derby/derby/10.1.1.0/derby-10.1.1.0-javadoc.jar
+[warn] ==== typesafe-ivy-releasez: tried
+[warn]   http://repo.typesafe.com/typesafe/ivy-releases/org.apache.derby/derby/10.1.1.0/docs/derby-javadoc.jar
+[warn] ==== scalaz-bintray: tried
+[warn]   http://dl.bintray.com/scalaz/releases/org/apache/derby/derby/10.1.1.0/derby-10.1.1.0-javadoc.jar
+[warn] ==== Typesafe Releases: tried
+[warn]   http://repo.typesafe.com/typesafe/releases/org/apache/derby/derby/10.1.1.0/derby-10.1.1.0-javadoc.jar
+[warn] ==== Atlassian Releases: tried
+[warn]   https://maven.atlassian.com/public/org/apache/derby/derby/10.1.1.0/derby-10.1.1.0-javadoc.jar
+[warn] 	[FAILED     ] org.apache.derby#derby;10.1.1.0!derby.jar(src):  (0ms)
+[warn] ==== local: tried
+[warn]   /Users/brunnoattorre1/.ivy2/local/org.apache.derby/derby/10.1.1.0/srcs/derby-sources.jar
+[warn] ==== activator-launcher-local: tried
+[warn]   /Users/brunnoattorre1/.activator/repository/org.apache.derby/derby/10.1.1.0/srcs/derby-sources.jar
+[warn] ==== activator-local: tried
+[warn]   /usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.apache.derby/derby/10.1.1.0/srcs/derby-sources.jar
+[warn] ==== public: tried
+[warn]   https://repo1.maven.org/maven2/org/apache/derby/derby/10.1.1.0/derby-10.1.1.0-sources.jar
+[warn] ==== typesafe-releases: tried
+[warn]   http://repo.typesafe.com/typesafe/releases/org/apache/derby/derby/10.1.1.0/derby-10.1.1.0-sources.jar
+[warn] ==== typesafe-ivy-releasez: tried
+[warn]   http://repo.typesafe.com/typesafe/ivy-releases/org.apache.derby/derby/10.1.1.0/srcs/derby-sources.jar
+[warn] ==== scalaz-bintray: tried
+[warn]   http://dl.bintray.com/scalaz/releases/org/apache/derby/derby/10.1.1.0/derby-10.1.1.0-sources.jar
+[warn] ==== Typesafe Releases: tried
+[warn]   http://repo.typesafe.com/typesafe/releases/org/apache/derby/derby/10.1.1.0/derby-10.1.1.0-sources.jar
+[warn] ==== Atlassian Releases: tried
+[warn]   https://maven.atlassian.com/public/org/apache/derby/derby/10.1.1.0/derby-10.1.1.0-sources.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.0!scala-compiler.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.0!scala-compiler.jar(doc)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.11.0!scala-library.jar(doc)
@@ -2447,7 +2580,14 @@
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1!scala-parser-combinators_2.11.jar(src)
 [debug] 	[NOT REQUIRED] jline#jline;2.11!jline.jar(src)
 [debug] 	[NOT REQUIRED] jline#jline;2.11!jline.jar(doc)
-[debug] :: resolution report :: resolve 653ms :: artifacts dl 68ms
+[debug] :: resolution report :: resolve 1943ms :: artifacts dl 2868ms
+[warn] 	::::::::::::::::::::::::::::::::::::::::::::::
+[warn] 	::              FAILED DOWNLOADS            ::
+[warn] 	:: ^ see resolution messages for details  ^ ::
+[warn] 	::::::::::::::::::::::::::::::::::::::::::::::
+[warn] 	:: org.apache.derby#derby;10.1.1.0!derby.jar(doc)
+[warn] 	:: org.apache.derby#derby;10.1.1.0!derby.jar(src)
+[warn] 	::::::::::::::::::::::::::::::::::::::::::::::
 [debug] 	report for default#github-indexer$sources_javadoc_2.11;1.0 compile produced in /Users/brunnoattorre1/Documents/startup-etc/github-indexer/target/resolution-cache/reports/default-github-indexer$sources_javadoc_2.11-compile.xml
 [debug] 	report for default#github-indexer$sources_javadoc_2.11;1.0 runtime produced in /Users/brunnoattorre1/Documents/startup-etc/github-indexer/target/resolution-cache/reports/default-github-indexer$sources_javadoc_2.11-runtime.xml
 [debug] 	report for default#github-indexer$sources_javadoc_2.11;1.0 test produced in /Users/brunnoattorre1/Documents/startup-etc/github-indexer/target/resolution-cache/reports/default-github-indexer$sources_javadoc_2.11-test.xml
@@ -2461,4 +2601,4 @@
 [debug] 	report for default#github-indexer$sources_javadoc_2.11;1.0 docs produced in /Users/brunnoattorre1/Documents/startup-etc/github-indexer/target/resolution-cache/reports/default-github-indexer$sources_javadoc_2.11-docs.xml
 [debug] 	report for default#github-indexer$sources_javadoc_2.11;1.0 pom produced in /Users/brunnoattorre1/Documents/startup-etc/github-indexer/target/resolution-cache/reports/default-github-indexer$sources_javadoc_2.11-pom.xml
 [debug] 	report for default#github-indexer$sources_javadoc_2.11;1.0 scala-tool produced in /Users/brunnoattorre1/Documents/startup-etc/github-indexer/target/resolution-cache/reports/default-github-indexer$sources_javadoc_2.11-scala-tool.xml
-[debug] 	resolve done (653ms resolve - 68ms download)
+[debug] 	resolve done (1943ms resolve - 2868ms download)
