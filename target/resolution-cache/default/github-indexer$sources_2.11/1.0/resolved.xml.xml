@@ -4,7 +4,7 @@
 		module="github-indexer$sources_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20151024203054"
+		publication="20151025125006"
 	/>
 	<configurations>
 		<conf name="default" visibility="public" description=""/>
