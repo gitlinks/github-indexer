@@ -34,7 +34,6 @@ class Master extends Actor with ActorLogging{
       context.actorOf(Props[DerbyDAO]) ! InsertLastUpdatedDate(sdf.format(cal.getTime))
     case ResultString(list) =>
       log.info("Starting to send repos to elasticsearch")
-
       list.foreach {
         case Some(s) =>
           elasticRouter ! UploadToElastic(s)

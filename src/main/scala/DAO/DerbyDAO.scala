@@ -14,7 +14,7 @@ class DerbyDAO extends Actor with ActorLogging{
   Class.forName("org.apache.derby.jdbc.EmbeddedDriver")
 
   val createQuery = "CREATE TABLE LOG (TIMESTAMP_STRING VARCHAR(10)) "
-  val insertQuery = "INSERT INTO LOG (TIMESTAMP_STRING) VALUES (\"%s\")"
+  val insertQuery = "INSERT INTO LOG (TIMESTAMP_STRING) VALUES ('%s')"
   val getQuery= "SELECT * FROM LOG ORDER BY TIMESTAMP_STRING DESC"
   val conn =  DriverManager.getConnection("jdbc:derby:derbyDB;create=true")
 
@@ -48,7 +48,7 @@ class DerbyDAO extends Actor with ActorLogging{
     try{
       val rs = st.executeQuery(getQuery)
       rs.next()
-      rs.getString(0)
+      rs.getString(1)
     }catch{
       case e:Exception => log.error(e, "Error on Inserting date")
         ""
