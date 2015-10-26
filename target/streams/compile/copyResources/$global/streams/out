@@ -1,4 +1,0 @@
-[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
-[0m[[0mdebug[0m] [0m	(/Users/brunnoattorre1/Documents/startup-etc/github-indexer/src/main/resources/application.conf,/Users/brunnoattorre1/Documents/startup-etc/github-indexer/target/scala-2.11/classes/application.conf)[0m
-[0m[[0mdebug[0m] [0m	(/Users/brunnoattorre1/Documents/startup-etc/github-indexer/src/main/resources/logback.xml,/Users/brunnoattorre1/Documents/startup-etc/github-indexer/target/scala-2.11/classes/logback.xml)[0m
-[0m[[0mdebug[0m] [0m	(/Users/brunnoattorre1/Documents/startup-etc/github-indexer/src/main/resources/sendgrid.conf,/Users/brunnoattorre1/Documents/startup-etc/github-indexer/target/scala-2.11/classes/sendgrid.conf)[0m
