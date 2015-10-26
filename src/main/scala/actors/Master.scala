@@ -61,13 +61,17 @@ class Master extends Actor with ActorLogging {
         context.actorOf(Props[DerbyDAO]) ! InitDatabase
         getEverything()
       case s =>
-        if(sdf.parse(s).before(yesterdayDate)) warnAdmin(sdf.parse(s))
+        if(sdf.parse(s).before(getDatePlusDays(-2))) warnAdmin(sdf.parse(s))
     }
   }
 
   def yesterdayDate() : Date={
+    getDatePlusDays(-1)
+  }
+
+  def getDatePlusDays(days:Int): Date ={
     val calendar = Calendar.getInstance()
-    calendar.add(Calendar.DATE, -1)
+    calendar.add(Calendar.DATE, days)
     calendar.getTime
   }
 }
