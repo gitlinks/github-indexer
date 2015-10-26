@@ -3,6 +3,7 @@ package actors
 import java.util.zip.GZIPInputStream
 
 import akka.dispatch.{UnboundedMailbox, RequiresMessageQueue}
+import com.typesafe.config.ConfigFactory
 import play.api.libs.json.Json
 
 import scala.io.Source
@@ -19,10 +20,12 @@ import akka.actor.{ActorLogging, Actor}
  */
 class Worker extends Actor  with ActorLogging {
 
+  var githubArchiveEndpoint = ConfigFactory.load().getString("akka.githubarchive.endpoint")
+
   def downloadAndParse(i: Int, date: String): Seq[Option[String]] = {
     try {
-      log.info("Starting download of " + "http://data.githubarchive.org/" + date + "-" + i + ".json.gz")
-      val gis = new GZIPInputStream(new BufferedInputStream(new URL("http://data.githubarchive.org/" + date + "-" + i + ".json.gz").openStream()))
+      log.info("Starting download of " + githubArchiveEndpoint+ date + "-" + i + ".json.gz")
+      val gis = new GZIPInputStream(new BufferedInputStream(new URL(githubArchiveEndpoint + date + "-" + i + ".json.gz").openStream()))
       log.info("Download finished")
       Source.fromInputStream(gis).getLines().map(parseSingleLine).toSeq
     } catch {

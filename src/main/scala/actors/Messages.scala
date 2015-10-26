@@ -12,3 +12,4 @@ case class InsertLastUpdatedDate(s: String) extends Messages
 case object GetLastUpdatedDate extends Messages
 case class ReceiveLastUpdateDate(s: String) extends Messages
 case object InitDatabase extends Messages
+case class SendEmail(s:String) extends Messages

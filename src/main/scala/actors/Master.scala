@@ -17,7 +17,6 @@ class Master extends Actor with ActorLogging {
   val router: ActorRef =
     context.actorOf(RoundRobinPool(1).props(Props[Worker]), "workerRouter")
   val sdf = new SimpleDateFormat("yyyy-MM-dd")
-  val lastRunFile = new File("last-run.txt")
 
 
   def warnAdmin(dateLastRun: Date) = ???
@@ -27,13 +26,11 @@ class Master extends Actor with ActorLogging {
       log.info("Getting everything! Shit is about to get real")
       val calendar = Calendar.getInstance()
       calendar.add(Calendar.YEAR, -4)
-      val date = new SimpleDateFormat("yyyy-MM-dd").format(calendar.getTime)
-
       for (i <- 0 to 1460) {
         calendar.add(Calendar.DAY_OF_YEAR, 1)
 
         for (i <- 0 to 23) {
-          router ! Work(i, new SimpleDateFormat("yyyy-MM-dd").format(calendar.getTime))
+          router ! Work(i, sdf.format(calendar.getTime))
         }
       }
     } catch {
@@ -45,16 +42,12 @@ class Master extends Actor with ActorLogging {
     case Start =>
       log.info("Start")
       context.actorOf(Props[DerbyDAO]) ! GetLastUpdatedDate
-      val calendar = Calendar.getInstance()
-      calendar.add(Calendar.DATE, -1)
-      val currentDate = new SimpleDateFormat("yyyy-MM-dd").format(calendar.getTime)
+      val currentDate = yesterdayDate
 
       for (i <- 0 to 23) {
-         router ! Work(i, currentDate)
+        router ! Work(i, sdf.format(currentDate))
       }
-      val cal = Calendar.getInstance()
-      cal.add(Calendar.DAY_OF_MONTH, -2)
-      context.actorOf(Props[DerbyDAO]) ! InsertLastUpdatedDate(sdf.format(cal.getTime))
+      context.actorOf(Props[DerbyDAO]) ! InsertLastUpdatedDate(sdf.format(currentDate))
     case ResultString(list) =>
       try {
         log.info("Starting to send repos to elasticsearch")
@@ -67,7 +60,14 @@ class Master extends Actor with ActorLogging {
       case "" =>
         context.actorOf(Props[DerbyDAO]) ! InitDatabase
         getEverything()
-
+      case s =>
+        if(sdf.parse(s).before(yesterdayDate)) warnAdmin(sdf.parse(s))
     }
+  }
+
+  def yesterdayDate() : Date={
+    val calendar = Calendar.getInstance()
+    calendar.add(Calendar.DATE, -1)
+    calendar.getTime
   }
 }
