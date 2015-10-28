@@ -6,6 +6,9 @@ import com.typesafe.config.ConfigFactory
 import scalaj.http.Http
 import akka.dispatch.{UnboundedMailbox, RequiresMessageQueue, BoundedMessageQueueSemantics}
 
+/**
+ * Created by brunnoattorre1 on 10/22/15.
+ */
 class ElasticsearchUploader extends Actor with ActorLogging {
   val elasticEndpoint = ConfigFactory.load().getString("akka.elastic.endpoint")
 
@@ -18,7 +21,7 @@ class ElasticsearchUploader extends Actor with ActorLogging {
             val owner = repo.split("/")(0)
             val name = repo.split("/")(1)
             var url = elasticEndpoint + repo.replace("/", "-")
-            val httpRequest = Http(url).method("PUT").header("Charset", "UTF-8").postData("{repo: {\"name\": \"" + repo + "\"}}")
+            val httpRequest = Http(url).method("PUT").postData("{repo: {\"name\": \"" + repo + "\"}}")
             log.debug("Response " + httpRequest.asString)
           case None =>
         }

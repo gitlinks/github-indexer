@@ -18,19 +18,21 @@ import akka.actor.{ActorLogging, Actor}
 /**
  * Created by brunnoattorre1 on 10/22/15.
  */
-class Worker extends Actor  with ActorLogging {
+class Worker extends Actor with ActorLogging {
 
   var githubArchiveEndpoint = ConfigFactory.load().getString("akka.githubarchive.endpoint")
 
   def downloadAndParse(i: Int, date: String): Seq[Option[String]] = {
+    val gis = new GZIPInputStream(new BufferedInputStream(new URL(githubArchiveEndpoint + date + "-" + i + ".json.gz").openStream()))
     try {
-      log.info("Starting download of " + githubArchiveEndpoint+ date + "-" + i + ".json.gz")
-      val gis = new GZIPInputStream(new BufferedInputStream(new URL(githubArchiveEndpoint + date + "-" + i + ".json.gz").openStream()))
+      log.info("Starting download of " + githubArchiveEndpoint + date + "-" + i + ".json.gz")
       log.info("Download finished")
-      Source.fromInputStream(gis)("UTF-8").getLines().map(parseSingleLine).toSeq
+      Source.fromInputStream(gis).getLines().map(parseSingleLine).toSeq
     } catch {
       case e: Exception => log.error(e, "Error on download and parse")
         Seq()
+    } finally {
+      gis.close()
     }
   }
 
