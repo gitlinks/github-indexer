@@ -27,12 +27,12 @@ class Worker extends Actor with ActorLogging {
     val urlIs = getUrlInputStream(githubArchiveEndpoint + date + "-" + i + ".json.gz")
     val gis = new GZIPInputStream(urlIs)
     try {
-      val seqToReturn = List()
-      Source.fromInputStream(gis)("UTF-8").getLines().foreach(x => parseSingleLine(x).getOrElse("") :: seqToReturn  )
+      var seqToReturn = scala.collection.mutable.MutableList[String]()
+      Source.fromInputStream(gis)("UTF-8").getLines().foreach(x => seqToReturn ++= List(parseSingleLine(x).getOrElse("")))
       log.info("Download finished")
       seqToReturn
     } catch {
-      case e: Exception => log.error(e, "Error on download and parse")
+      case e: Exception => log.error(e, "Error on download and parse for "+ date +" "+i )
         Seq()
     } finally {
       gis.close()
@@ -58,7 +58,9 @@ class Worker extends Actor with ActorLogging {
     val jsObject = Json.parse(line)
     (jsObject \\ "type")(0).as[String] match {
       case "CreateEvent" => {
-        if ((jsObject \\ "ref_type")(0).as[String].equals("repository")) ((jsObject \ "repo") \ "name").asOpt[String]
+        if ((jsObject \\ "ref_type")(0).as[String].equals("repository")) {
+          ((jsObject \ "repo") \ "name").asOpt[String]
+        }
         else None
       }
       case _ => None

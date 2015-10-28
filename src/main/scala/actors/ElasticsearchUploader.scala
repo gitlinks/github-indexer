@@ -15,14 +15,15 @@ class ElasticsearchUploader extends Actor with ActorLogging {
   def receive: Receive = {
     case UploadToElastic(s) => {
       try {
-        log.info("Uploading " + s + " to elasticsearch")
+        log.info("Uploading " + s.length + " to elasticsearch")
         s.foreach {
           repo =>
-            val owner = repo.split("/")(0)
-            val name = repo.split("/")(1)
-            var url = elasticEndpoint + repo.replace("/", "-")
-            val httpRequest = Http(url).method("PUT").postData("{repo: {\"name\": \"" + repo + "\"}}")
-            log.debug("Response " + httpRequest.asString)
+            if(!repo.isEmpty){
+              println(repo)
+              var url = elasticEndpoint + repo.replace("/", "-")
+              val httpRequest = Http(url).method("PUT").postData("{repo: {\"name\": \"" + repo + "\"}}")
+              log.debug("Response " + httpRequest.asString)
+            }
         }
       } catch {
         case e: Exception => log.error(e, "Error on uploading")
