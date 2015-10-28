@@ -4,7 +4,7 @@ import java.util.zip.GZIPInputStream
 
 import akka.dispatch.{UnboundedMailbox, RequiresMessageQueue}
 import com.typesafe.config.ConfigFactory
-import play.api.libs.json.Json
+import play.api.libs.json.{JsObject, Json}
 
 import scala.io.Source
 import sys.process._
@@ -22,7 +22,7 @@ class Worker extends Actor with ActorLogging {
 
   var githubArchiveEndpoint = ConfigFactory.load().getString("akka.githubarchive.endpoint")
 
-  def downloadAndParse(i: Int, date: String): Seq[(String,String)] = {
+  def downloadAndParse(i: Int, date: String): Seq[(String, String)] = {
     log.warning("Starting download of " + githubArchiveEndpoint + date + "-" + i + ".json.gz")
     val urlIs = getUrlInputStream(githubArchiveEndpoint + date + "-" + i + ".json.gz")
     val gis = new GZIPInputStream(urlIs)
@@ -34,7 +34,7 @@ class Worker extends Actor with ActorLogging {
       source.close()
       seqToReturn
     } catch {
-      case e: Exception => log.error(e, "Error on download and parse for "+ date +" "+i )
+      case e: Exception => log.error(e, "Error on download and parse for " + date + " " + i)
         Seq()
     } finally {
       gis.close()
@@ -57,16 +57,13 @@ class Worker extends Actor with ActorLogging {
   }
 
   def parseSingleLine(line: String): (String, String) = {
-    val jsObject = Json.parse(line)
-    (jsObject \\ "type")(0).as[String] match {
-      case "CreateEvent" => {
-        if ((jsObject \\ "ref_type")(0).as[String].equals("repository")) {
-          (((jsObject \ "repo") \ "id").as[Int].toString ,((jsObject \ "repo") \ "name").as[String])
-        }
-        else ("","")
+    val jsObject = Json.parse(line).as[JsObject]
+    (jsObject).keys.contains("repo") match {
+      case true => (((jsObject \ "repo") \ "id").as[Int].toString, ((jsObject \ "repo") \ "name").as[String])
+      case false => (jsObject).keys.contains("repository") match {
+        case true => (((jsObject \ "repository") \ "id").as[Int].toString, ((jsObject \ "repository") \ "name").as[String])
+        case false => ("", "")
       }
-      case "PushEvent" =>(((jsObject \ "repo") \ "id").as[Int].toString , ((jsObject \ "repo") \ "name").as[String])
-      case _ => ("","")
     }
   }
 

@@ -45,7 +45,7 @@ class Master extends Actor with ActorLogging {
       val currentDate = yesterdayDate
 
       for (i <- 0 to 23) {
-        router ! Work(i, sdf.format(currentDate))
+        router ! Work(i, "2013-05-01")
       }
       context.actorOf(Props[DerbyDAO]) ! InsertLastUpdatedDate(sdf.format(currentDate))
     case ResultString(list) =>
