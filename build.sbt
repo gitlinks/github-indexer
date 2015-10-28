@@ -10,6 +10,7 @@ libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.1.3"
 libraryDependencies += "org.apache.derby" % "derby" % "10.1.1.0"
 libraryDependencies += "org.scalatest" % "scalatest_2.11" % "2.2.4" % "test"
 
+javaOptions += "-Dfile.encoding=utf-8"
 mainClass in Compile := Some("Pooling")
 scalaSource in Compile := baseDirectory.value / "src"
 enablePlugins(JavaAppPackaging)
