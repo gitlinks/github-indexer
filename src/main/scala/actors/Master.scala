@@ -13,7 +13,7 @@ import java.io.{PrintWriter, File}
 import akka.actor.{ActorLogging, ActorRef, Props, Actor}
 
 class Master extends Actor with ActorLogging {
-  val elasticRouter: ActorRef = context.actorOf(RoundRobinPool(3).props(Props[ElasticsearchUploader]), "router2")
+  val elasticRouter: ActorRef = context.actorOf(RoundRobinPool(8).props(Props[ElasticsearchUploader]), "router2")
   val router: ActorRef =
     context.actorOf(RoundRobinPool(1).props(Props[Worker]), "router1")
   val sdf = new SimpleDateFormat("yyyy-MM-dd")
