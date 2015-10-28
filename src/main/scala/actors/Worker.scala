@@ -23,13 +23,15 @@ class Worker extends Actor with ActorLogging {
   var githubArchiveEndpoint = ConfigFactory.load().getString("akka.githubarchive.endpoint")
 
   def downloadAndParse(i: Int, date: String): Seq[String] = {
-    log.info("Starting download of " + githubArchiveEndpoint + date + "-" + i + ".json.gz")
+    log.warning("Starting download of " + githubArchiveEndpoint + date + "-" + i + ".json.gz")
     val urlIs = getUrlInputStream(githubArchiveEndpoint + date + "-" + i + ".json.gz")
     val gis = new GZIPInputStream(urlIs)
     try {
       var seqToReturn = scala.collection.mutable.MutableList[String]()
-      Source.fromInputStream(gis)("UTF-8").getLines().foreach(x => seqToReturn ++= List(parseSingleLine(x).getOrElse("")))
+      val source = Source.fromInputStream(gis)("UTF-8")
+      source.getLines().foreach(x => seqToReturn ++= List(parseSingleLine(x).getOrElse("")))
       log.info("Download finished")
+      source.close()
       seqToReturn
     } catch {
       case e: Exception => log.error(e, "Error on download and parse for "+ date +" "+i )
