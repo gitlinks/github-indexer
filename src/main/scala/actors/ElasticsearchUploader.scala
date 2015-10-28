@@ -19,7 +19,6 @@ class ElasticsearchUploader extends Actor with ActorLogging {
         s.foreach {
           repo =>
             if(!repo.isEmpty){
-              println(repo)
               var url = elasticEndpoint + repo.replace("/", "-")
               val httpRequest = Http(url).method("PUT").postData("{repo: {\"name\": \"" + repo + "\"}}")
               log.debug("Response " + httpRequest.asString)
