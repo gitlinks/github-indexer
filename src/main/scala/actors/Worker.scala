@@ -28,7 +28,7 @@ class Worker extends Actor with ActorLogging {
     val gis = new GZIPInputStream(urlIs)
     try {
       val seqToReturn = List()
-      Source.fromInputStream(gis).getLines().foreach(x => parseSingleLine(x).getOrElse("") :: seqToReturn  )
+      Source.fromInputStream(gis)("UTF-8").getLines().foreach(x => parseSingleLine(x).getOrElse("") :: seqToReturn  )
       log.info("Download finished")
       seqToReturn
     } catch {
