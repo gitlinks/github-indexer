@@ -9,7 +9,7 @@ import play.api.libs.json.Json
 import scala.io.Source
 import sys.process._
 import java.io.{BufferedInputStream, FileInputStream, File}
-import java.net.URL
+import java.net.{HttpURLConnection, URL}
 import java.text.SimpleDateFormat
 import java.util.{Calendar, Date}
 
@@ -22,18 +22,36 @@ class Worker extends Actor with ActorLogging {
 
   var githubArchiveEndpoint = ConfigFactory.load().getString("akka.githubarchive.endpoint")
 
-  def downloadAndParse(i: Int, date: String): Seq[Option[String]] = {
-    val gis = new GZIPInputStream(new BufferedInputStream(new URL(githubArchiveEndpoint + date + "-" + i + ".json.gz").openStream()))
+  def downloadAndParse(i: Int, date: String): Seq[String] = {
+    log.info("Starting download of " + githubArchiveEndpoint + date + "-" + i + ".json.gz")
+    val urlIs = getUrlInputStream(githubArchiveEndpoint + date + "-" + i + ".json.gz")
+    val gis = new GZIPInputStream(urlIs)
     try {
-      log.info("Starting download of " + githubArchiveEndpoint + date + "-" + i + ".json.gz")
+      val seqToReturn = List()
+      Source.fromInputStream(gis).getLines().foreach(x => parseSingleLine(x).getOrElse("") :: seqToReturn  )
       log.info("Download finished")
-      Source.fromInputStream(gis).getLines().map(parseSingleLine).toSeq
+      seqToReturn
     } catch {
       case e: Exception => log.error(e, "Error on download and parse")
         Seq()
     } finally {
       gis.close()
+      urlIs.close()
     }
+  }
+
+  def getUrlInputStream(url: String,
+                        connectTimeout: Int = 5000,
+                        readTimeout: Int = 5000,
+                        requestMethod: String = "GET") = {
+    val u = new URL(url)
+    val conn = u.openConnection.asInstanceOf[HttpURLConnection]
+    HttpURLConnection.setFollowRedirects(false)
+    conn.setConnectTimeout(connectTimeout)
+    conn.setReadTimeout(readTimeout)
+    conn.setRequestMethod(requestMethod)
+    conn.connect
+    conn.getInputStream
   }
 
   def parseSingleLine(line: String): Option[String] = {
