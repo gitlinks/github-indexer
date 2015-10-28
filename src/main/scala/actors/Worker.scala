@@ -22,14 +22,14 @@ class Worker extends Actor with ActorLogging {
 
   var githubArchiveEndpoint = ConfigFactory.load().getString("akka.githubarchive.endpoint")
 
-  def downloadAndParse(i: Int, date: String): Seq[String] = {
+  def downloadAndParse(i: Int, date: String): Seq[(String,String)] = {
     log.warning("Starting download of " + githubArchiveEndpoint + date + "-" + i + ".json.gz")
     val urlIs = getUrlInputStream(githubArchiveEndpoint + date + "-" + i + ".json.gz")
     val gis = new GZIPInputStream(urlIs)
     try {
-      var seqToReturn = scala.collection.mutable.MutableList[String]()
+      var seqToReturn = scala.collection.mutable.MutableList[(String, String)]()
       val source = Source.fromInputStream(gis)("UTF-8")
-      source.getLines().foreach(x => seqToReturn ++= List(parseSingleLine(x).getOrElse("")))
+      source.getLines().foreach(x => seqToReturn ++= List(parseSingleLine(x)))
       log.info("Download finished")
       source.close()
       seqToReturn
@@ -56,17 +56,17 @@ class Worker extends Actor with ActorLogging {
     conn.getInputStream
   }
 
-  def parseSingleLine(line: String): Option[String] = {
+  def parseSingleLine(line: String): (String, String) = {
     val jsObject = Json.parse(line)
     (jsObject \\ "type")(0).as[String] match {
       case "CreateEvent" => {
         if ((jsObject \\ "ref_type")(0).as[String].equals("repository")) {
-          ((jsObject \ "repo") \ "name").asOpt[String]
+          (((jsObject \ "repo") \ "id").as[Int].toString ,((jsObject \ "repo") \ "name").as[String])
         }
-        else None
+        else ("","")
       }
-      case "PushEvent" => ((jsObject \ "repo") \ "name").asOpt[String]
-      case _ => None
+      case "PushEvent" =>(((jsObject \ "repo") \ "id").as[Int].toString , ((jsObject \ "repo") \ "name").as[String])
+      case _ => ("","")
     }
   }
 
