@@ -25,7 +25,7 @@ class Master extends Actor with ActorLogging {
     try {
       log.info("Getting everything! Shit is about to get real")
       val calendar = Calendar.getInstance()
-      calendar.add(Calendar.YEAR, -4)
+      calendar.add(Calendar.YEAR, -3)
       for (i <- 0 to 1460) {
         calendar.add(Calendar.DAY_OF_YEAR, 1)
 

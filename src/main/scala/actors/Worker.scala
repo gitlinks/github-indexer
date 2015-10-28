@@ -63,7 +63,7 @@ class Worker extends Actor with ActorLogging {
         }
         else None
       }
-      case _ => None
+      case "PushEvent" => ((jsObject \ "repo") \ "name").asOpt[String]
     }
   }
 
