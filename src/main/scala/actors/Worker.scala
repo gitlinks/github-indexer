@@ -58,11 +58,14 @@ class Worker extends Actor with ActorLogging {
 
   def parseSingleLine(line: String): (String, String) = {
     val jsObject = Json.parse(line).as[JsObject]
-    (jsObject).keys.contains("repo") match {
-      case true => (((jsObject \ "repo") \ "id").as[Int].toString, ((jsObject \ "repo") \ "name").as[String])
-      case false => (jsObject).keys.contains("repository") match {
-        case true => (((jsObject \ "repository") \ "id").as[Int].toString, ((jsObject \ "repository") \ "name").as[String])
-        case false => ("", "")
+    if (!jsObject.value("type").as[String].equals("CreateEvent") || !jsObject.value("type").as[String].equals("PushEvent")) ("","")
+    else {
+      (jsObject).keys.contains("repo") match {
+        case true => (((jsObject \ "repo") \ "id").as[Int].toString, ((jsObject \ "repo") \ "name").as[String])
+        case false => (jsObject).keys.contains("repository") match {
+          case true => (((jsObject \ "repository") \ "id").as[Int].toString, ((jsObject \ "repository") \ "name").as[String])
+          case false => ("", "")
+        }
       }
     }
   }
