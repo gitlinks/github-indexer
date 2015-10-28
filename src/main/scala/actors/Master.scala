@@ -13,7 +13,7 @@ import java.io.{PrintWriter, File}
 import akka.actor.{ActorLogging, ActorRef, Props, Actor}
 
 class Master extends Actor with ActorLogging {
-  val elasticRouter: ActorRef = context.actorOf(RoundRobinPool(8).props(Props[ElasticsearchUploader]), "router2")
+  val elasticRouter: ActorRef = context.actorOf(RoundRobinPool(10).props(Props[ElasticsearchUploader]), "router2")
   val router: ActorRef =
     context.actorOf(RoundRobinPool(1).props(Props[Worker]), "router1")
   val sdf = new SimpleDateFormat("yyyy-MM-dd")
@@ -45,7 +45,7 @@ class Master extends Actor with ActorLogging {
       val currentDate = yesterdayDate
 
       for (i <- 0 to 23) {
-        router ! Work(i, sdf.format(currentDate))
+        router ! Work(i, "2012-11-03")
       }
       context.actorOf(Props[DerbyDAO]) ! InsertLastUpdatedDate(sdf.format(currentDate))
     case ResultString(list) =>

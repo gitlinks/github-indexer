@@ -63,7 +63,10 @@ class Worker extends Actor with ActorLogging {
       (jsObject).keys.contains("repo") match {
         case true => (((jsObject \ "repo") \ "id").as[Int].toString, ((jsObject \ "repo") \ "name").as[String])
         case false => (jsObject).keys.contains("repository") match {
-          case true => (((jsObject \ "repository") \ "id").as[Int].toString, ((jsObject \ "repository") \ "name").as[String])
+          case true =>{
+            if(((jsObject \ "repository") \ "name").as[String].contains("/")) (((jsObject \ "repository") \ "id").as[Int].toString, ((jsObject \ "repository") \ "name").as[String])
+            else (((jsObject \ "repository") \ "id").as[Int].toString, ((jsObject \ "repository") \ "owner").as[String] +"/"+((jsObject \ "repository") \ "name").as[String])
+          }
           case false => ("", "")
         }
       }
