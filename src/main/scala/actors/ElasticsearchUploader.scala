@@ -20,7 +20,7 @@ class ElasticsearchUploader extends Actor with ActorLogging {
           case (id ,repo)=>
             if(!repo.isEmpty){
               var url = elasticEndpoint + id
-              val httpRequest = Http(url).method("PUT").postData("{repo: {\"name\": \"" + repo + "\"}}")
+              val httpRequest = Http(url).method("PUT").postData("{\"repo\": {\"name\": \"" + repo + "\"}}")
               log.debug("Response " + httpRequest.asString)
             }
         }
