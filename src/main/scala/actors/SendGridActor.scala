@@ -16,6 +16,7 @@ class SendGridActor extends Actor with ActorLogging {
   def sendEmail(s: String): Unit = {
     val email = new SendGrid.Email()
     email.setTo(sgRecipients)
+    email.setFrom("git@gitrank.io")
     email.setText("Error on date "+s)
     email.setSubject("Error detected on akka github loader")
     sg.send(email)

@@ -14,12 +14,16 @@ import akka.actor.{ActorLogging, ActorRef, Props, Actor}
 
 class Master extends Actor with ActorLogging {
   val elasticRouter: ActorRef = context.actorOf(RoundRobinPool(10).props(Props[ElasticsearchUploader]), "router2")
+  val emailRouter: ActorRef = context.actorOf(RoundRobinPool(1).props(Props[SendGridActor]), "router3")
+
   val router: ActorRef =
     context.actorOf(RoundRobinPool(1).props(Props[Worker]), "router1")
   val sdf = new SimpleDateFormat("yyyy-MM-dd")
 
 
-  def warnAdmin(dateLastRun: Date) = ???
+  def warnAdmin(dateLastRun: Date) = {
+    emailRouter ! SendEmail(sdf.format(dateLastRun))
+  }
 
   def getEverything(): Unit = {
     try {
