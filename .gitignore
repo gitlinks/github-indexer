@@ -1,0 +1,10 @@
+.idea/
+derby.log
+derbyDB/
+github-indexer.ipr
+github-indexer.iws
+last-run.txt
+log/
+project/project/
+project/target/config-classes/
+target/

@@ -10,7 +10,9 @@ import scala.io.Source
 import sys.process._
 import java.net.URL
 import java.io.{PrintWriter, File}
-import akka.actor.{ActorLogging, ActorRef, Props, Actor}
+import akka.actor._
+import scala.concurrent.duration._
+import scala.concurrent.ExecutionContext.Implicits.global
 
 class Master extends Actor with ActorLogging {
   val elasticRouter: ActorRef = context.actorOf(RoundRobinPool(10).props(Props[ElasticsearchUploader]), "router2")
@@ -43,6 +45,15 @@ class Master extends Actor with ActorLogging {
   }
 
   def receive: Receive = {
+    case InitScheduler =>
+      val system = ActorSystem("Pooling")
+      val master = system.actorOf(Props(new Master()),
+        name = "master")
+      master ! Start
+      system.scheduler.scheduleOnce(
+        1 day,
+        master,
+        InitScheduler)
     case Start =>
       log.info("Start")
       context.actorOf(Props[DerbyDAO]) ! GetLastUpdatedDate

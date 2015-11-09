@@ -1,4 +1,4 @@
-import actors.{Start, Master}
+import actors.{InitScheduler, Start, Master}
 import akka.actor._
 import akka.event.Logging
 import com.typesafe.config.ConfigFactory
@@ -11,9 +11,5 @@ object Pooling extends App {
   val system = ActorSystem("Pooling")
   val master = system.actorOf(Props(new Master()),
     name = "master")
-  system.scheduler.schedule(1 second ,
-    1 day,
-    master,
-    Start)
-
+  master ! InitScheduler
 }
